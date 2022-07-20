@@ -3,7 +3,7 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-   Root directory is probably the first and top most directoryin the hierarchy. The root directory is denoted by (/)slash sign
+   Root directory is probably the first and top most directory in the hierarchy. The root directory is denoted by (/)slash sign
   b, What is the difference between root and home directory?
    Root directory is reffered to / sign and the topmost directory and the home directory comes under the root directory.
   c, What is the difference between absolute and relative path?
