@@ -3,9 +3,9 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-
+    I love Linda
   b, What is the difference between root and home directory?
-
+   Linda is the best
   c, What is the difference between absolute and relative path?
 
   d, What command do you use to see what directory are you currently in?
