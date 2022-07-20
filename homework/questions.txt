@@ -3,72 +3,83 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-
+   Root directory is probably the first and top most directoryin the hierarchy. The root directory is denoted by (/)slash sign
   b, What is the difference between root and home directory?
-
+   Root directory is reffered to / sign and the topmost directory and the home directory comes under the root directory.
   c, What is the difference between absolute and relative path?
-
+   Absolute path is specifting the location of the file form the root directory and it's the complete path from the start of the root directory. And Relative path is actually reffered as the presently working directory.
   d, What command do you use to see what directory are you currently in?
-
+   pwd
   e, How would you see the files and folders in a directory?
-
+   ls 
+   ls -a
   f, How do you go back to your home directory?
-
-  g, How do you create a new folder, can you also specify in the command where you want to save it ?
-
+   Using the cd command ( cd ~)
+  g, How do you create a new folder, can you also specify in the command where you want to save it ? 
+    command ( mkdir )
   h, How do you remove a folder/directory, is it the same as removing a file?
-
+   rmdir (for empty directory)
+   rm -rf directory name (for not empty directory)
+   rm (for removing files)
+   And the answer is No. you can't remove directory from simple removing file commands
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
-
+   rm -rf directory name (for not empty directory)
+   we can use -rf flag.
   j, How do you move a folder/file ? What arguments does the command take?
-
+    we use ( mv The first argument is the file you want to move, and the second is the location to move it to)
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
-
+   Use (man command )
+    command name --help
   l, With what command do you rename a folder/file in the command line?
-
+    we use mv command
   m, How do you copy a folder ?
-
+   by using cp command (cp Path to the original file Path to the copied file)
   n, What command do you use to open a folder/file ?
-
+    "open" command 
+    in windows use "start"
 2. Creating a new project
   a, How do you create a new folder (what command) ?
-
+    mkdir folder name
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
-
+     mkdir folder name 
+     git init -b master (for initiate directory)
   c, What command do you use to create a new file ?
-
+    touch file name
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
-
+     first make directory using mkdir folder name
+     use cd to change directory to new new one that you recently made
+     git init -b master (for initiate )
     - from working directory to the staging area
-
+    git add file name with the extension Or git add .
     - from the staging area to local repository
-
+    git commit -m "Enter your message here"
   e, What does git status do ?
-
+     it show the status od the working directory, the changes you made 
   f, How would you check your commit history?
-
+    by using "git log"
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
 
     - How do you check whether you already have some github/remote repository connected to your local one?
-
+      git remote -v
     - What command do you use to add the remote
-
+     git remote add origin "ssh key"
   h, When local and remote repository are connected, one can push the changes/files so they are visible
      on github. What would be the structrure of the command ? Do you need to create a pull request?
-
-
-3. Working on an existing project
+       git push origin masster
+       Yes after that we need to pull the request 
+3. Working on an existing projecty
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
-
+     Git clone command followed by the remote repo's URL
   b, Do you need to initiate a git repository after cloning a project?
-
+     No you don't need to init a git repository after cloning because after cloning it gives us the local repository that you can start using it
   c, What is the difference between forking and cloning?
-
+      When you fork a repository, you create a copy of the original repository but the repository remains on your GitHub account. Whereas, when you clone a repository, the repository is copied on to your local machine with the help of Git.
   d, Can you just push your changes to repository that you don't "own" on github?
+   No you can't push it if you don't own it
