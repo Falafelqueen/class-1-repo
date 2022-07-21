@@ -3,72 +3,104 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
+  ans: Root directory is where all important files of you systems are located, all users accounts are also located in root directory.
 
   b, What is the difference between root and home directory?
+  ans: Root directory which is referred to as / (a slash) is the topmost level of the system drive while Home directory which is /Users/<short username> (also referred to as ~) comes under the root directory.  In root directory, the admin has the access for any changes in the configuration settings whereas if any user has only access to home directory, then he wont be able to change configurations of the entire system.
 
   c, What is the difference between absolute and relative path?
+  ans: Absolute path starts from root folder and relative path starts from your present working directory.
 
   d, What command do you use to see what directory are you currently in?
+  ans: We use (pwd) command to print working directory.
 
   e, How would you see the files and folders in a directory?
+  ans: We use (ls) command to list files and folders located in directory also we can use -a flag to list hiddin files/folders.
 
   f, How do you go back to your home directory?
+  ans: To go back to your home directory we use (cd ~) command.
 
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
+  ans: If you want to create a folder in your present directory just use 
+  (mkdir "folder name") command. if you want to create folder in any other directory use (mkdir path/path/folder name)
 
   h, How do you remove a folder/directory, is it the same as removing a file?
+  ans: For removing empty folder we use (rmdir folder-name) command & for folder with files/folders with in we use (rm -rf folder-name) command and for removing files we use (rm file-name.txt) command.
 
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
+  ans: If the folder/file is not empty and you want to remove it you can use (rm -rf folder/file-name)
 
   j, How do you move a folder/file ? What arguments does the command take?
+  ans: For moving folder/file we use (mv file/folder-name /path/) command.
 
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
+  ans: You can use (man command) for a quick manual of a command.
 
   l, With what command do you rename a folder/file in the command line?
+  ans: for renaming any file/folder we use sam command for moving file/folder (mv name new-name)
 
   m, How do you copy a folder ?
+  ans: We use (cp file/folder /path/) command to copy files/folders.
 
   n, What command do you use to open a folder/file ?
+  ans: Just use (open file/folder-name) command to open any file/folder.
 
 2. Creating a new project
   a, How do you create a new folder (what command) ?
+  ans: We use (mkdir folder-name) command.
 
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
+  ans: We use (git init -b master/main) command to create a local repository.
 
   c, What command do you use to create a new file ?
+  ans: We use (touch file-name.txt) command to create a new file.
 
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
+  ans:  1. we will create file using (touch file-name.txt) command
+        2. we will add text to file using (echo "text line" > file-name.txt) 
 
-    - from working directory to the staging area
+    - from working directory to the stagin)g area
+        To add file from working directory to staging area we use (git add file-name.txt) command.
 
     - from the staging area to local repository
+        To add file from staging area to local repository we use (git commit -m "our message") command.
 
   e, What does git status do ?
+  ans: (git status) command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
 
   f, How would you check your commit history?
+  ans: We use (git log) command to view the commit history and necessary information of the git repository.
 
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
+  ans: To add remote to local repository we must have to be in that directory, then we use (git remote add origin "SSH/HTML link of remote repository") command.
 
     - How do you check whether you already have some github/remote repository connected to your local one?
+      To check that is there any remote repository is connected to local repository or not, we use (git remote -v) command.
 
-    - What command do you use to add the remote
+    - What command do you use to add the remote?
+      To add remote we use (git remote add origin "SSH/HTML link of remote repository") command.
 
   h, When local and remote repository are connected, one can push the changes/files so they are visible
      on github. What would be the structrure of the command ? Do you need to create a pull request?
+  ans: When local repository and remote repository are connected then just for pushing changes/files we use (git commit -m "message") command to commit files/changes and then we use (git push -u origin master) command to push the files/changes to remote repository, and if you are not the owner of files and doing changing in fork then after doing changings in file you can pull request to file owner for merging these changings to original file. 
 
 
 3. Working on an existing project
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
+  ans: To get that files to my local repository i did fork to that remote repository and then i used (git clone "ssh/html link") to get that files in my local repository.
 
   b, Do you need to initiate a git repository after cloning a project?
+  ans: No, after cloning a project i just commit the changings and push back that to remote repository.
 
   c, What is the difference between forking and cloning?
+  ans: Forking is done on the GitHub Account while Cloning is done on your local machine. When you fork a repository, you create a copy of the original repository on your GitHub account. but when you clone a repository, the repository is copied on to your local machine with the help of Git.
 
   d, Can you just push your changes to repository that you don't "own" on github?
+  ans:  No, if i don't own a repository then i can't push changes to that repository but i can do a "pull request" to repository owner to merge that changes with the original repository.
