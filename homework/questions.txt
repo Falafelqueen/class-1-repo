@@ -7,7 +7,7 @@ we went through in class.
   b, What is the difference between root and home directory?
      Root directory is reffered to / sign and the topmost directory and the home directory comes under the root directory.
   c, What is the difference between absolute and relative path?
-   Absolute path is specifting the location of the file form the root directory and it's the complete path from the start of the root directory. And Relative path is       actually reffered as the presently working directory.
+   Absolute path is specifying the location of the file form the root directory and it's the complete path from the start of the root directory. And Relative path is       actually reffered as the presently working directory.
   d, What command do you use to see what directory are you currently in?
    pwd
   e, How would you see the files and folders in a directory?
