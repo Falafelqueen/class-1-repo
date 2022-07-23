@@ -3,72 +3,74 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-
+The root directory is noted by a /. Inside the root directory are essential files/folders that your machine needs.
   b, What is the difference between root and home directory?
-
+The root directory noted by / and home directory noted by ~.
   c, What is the difference between absolute and relative path?
-
+The path relative to where i am currently is "relative path" and path starting with / root directory is "absolute path".
   d, What command do you use to see what directory are you currently in?
-
+pwd command.
   e, How would you see the files and folders in a directory?
-
+ls command.
   f, How do you go back to your home directory?
-
+By using "cd" command.
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
-
+By using "mkdir" command we can create folder.
   h, How do you remove a folder/directory, is it the same as removing a file?
-
+By using "rmdir" we remove folder/directory. By using "rm" command we can remove file.
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
-
+IF folder is not empty we use rm -rf "name of folder"."-rf flag".
   j, How do you move a folder/file ? What arguments does the command take?
-
+Use command "mv" and arguments are name of folder/file you want to move space name of folder/file to where you want to move.
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
-
+Use "man" and command or --help.
   l, With what command do you rename a folder/file in the command line?
-
+"mv" command.
   m, How do you copy a folder ?
-
+Using "cp" command.
   n, What command do you use to open a folder/file ?
-
+"open" command and for windows "start" command.
 2. Creating a new project
   a, How do you create a new folder (what command) ?
-
+mkdir command.
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
-
+git init.
   c, What command do you use to create a new file ?
-
+touch command.
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
-
+git add.
     - from working directory to the staging area
-
+git add "file name"
     - from the staging area to local repository
-
+commit -m.
   e, What does git status do ?
-
+displays the state of the working directory and the staging area.
   f, How would you check your commit history?
-
+git log.
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
-
+git remote comand.
     - How do you check whether you already have some github/remote repository connected to your local one?
-
+git remote comand.
     - What command do you use to add the remote
-
+git remote add.
   h, When local and remote repository are connected, one can push the changes/files so they are visible
      on github. What would be the structrure of the command ? Do you need to create a pull request?
-
-
+git push origin (master/main),where you want to push.
+yes.
 3. Working on an existing project
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
-
+fork the repo and then git clone.
   b, Do you need to initiate a git repository after cloning a project?
-
+No.
   c, What is the difference between forking and cloning?
-
+Forking creates your own copy of a repository in a remote location.
+Cloning makes a local copy of a repository, not your own copy.
   d, Can you just push your changes to repository that you don't "own" on github?
+No, first you have to fork it.
