@@ -3,72 +3,113 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
+       The root directory is the top level directory in a folder structure. All of the folders grow
+     outwards from the root directory, so it makes sense to think of the root directory as the trunk
+     of a tree from which the branches grow.
 
-  b, What is the difference between root and home directory?
-
+  b, What is the difference between root and home directory? 
+      Root directory is the top most level of the system drive while home directory comes under the 
+    root directory.It contains a particular user data.
+  
   c, What is the difference between absolute and relative path?
-
+        A relative path describes the location of a file relative to the current (working) directory.
+     while an absolute path describes the location from the root directory.
+  
   d, What command do you use to see what directory are you currently in?
-
+          Use the "pwd" command to write to standard output the full path name of your current directory
+      from the root directory.
+  
   e, How would you see the files and folders in a directory?
-
+       Use the "ls" command to see the files and folders in a directory.
+  
   f, How do you go back to your home directory?
-
+        Use "cd ~" to go back to your home directory.   
+  
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
-
+         We can create a new folder by using command "mkdir foldername". 
+  
   h, How do you remove a folder/directory, is it the same as removing a file?
-
+         we can remove the dirctory by using command "rm -rf folder-name." it is not the same as removing 
+     a file because we are using the flag -rf , which we don't use to remove a file. 
+  
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
-
+         The command to delete a non-empty folder is "rm -r foldername".
+  
   j, How do you move a folder/file ? What arguments does the command take?
-
+         By using command "mv foldername foldernewname" we can move the folder. the command take two arguments
+     existing foldername and the foldernewname where we are moving the folder.
+  
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
-
+        "man" command is uesd to look manual for more commands.
   l, With what command do you rename a folder/file in the command line?
-
+         With the command "mv folder-name rename_folder"  with two arguments , we can rename the file/folder.
+  
   m, How do you copy a folder ?
-
+         With the command "cp -r folder-being-copied folder-to-copy-into", we can copy the folfer. 
+  
   n, What command do you use to open a folder/file ?
+          With the command "open file/folder-name" , we can open a file or folder.
 
 2. Creating a new project
   a, How do you create a new folder (what command) ?
-
+          "mkdir folder-name" is used to create new folder.
+ 
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
-
+        "git init" command is used to initiate a local repsitory.
+  
   c, What command do you use to create a new file ?
-
+        "touch file-name.txt" command is used to create a new file.
+  
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
-
-    - from working directory to the staging area
-
-    - from the staging area to local repository
-
+          With the command "git add file-name " or "git add ." we can save all changes in our local repository. 
+    - 
+    from working directory to the staging area
+          For staging area we use command "git commit -m< type message>".
+    -
+     from the staging area to local repository
+           From staging area to local repository we use command "git push".
+  
   e, What does git status do ?
-
+           It displays the state of the working directory and the staging area. It lets you see which changes
+     have been staged, which haven't, and which files aren't being tracked by Git. 
+  
   f, How would you check your commit history?
-
+          By using command "git log" we can see our comit history.
+  
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
-
+             By using command "git remote add origin URL" we will set a new remote and connect it with our local repository. 
+   
     - How do you check whether you already have some github/remote repository connected to your local one?
-
+          By using command "git remote -v" , we will get two origin with url links (fetch) and (push). git fetch means that we 
+        download contents from a remote repository. Push is how we transfer commits from our local repository to a remote repo.
+    
     - What command do you use to add the remote
-
+            "git remote add [name][Url]" is used to add remote.
+ 
   h, When local and remote repository are connected, one can push the changes/files so they are visible
      on github. What would be the structrure of the command ? Do you need to create a pull request?
-
+          After commit and push we make changes in repository .The changes are visible . We don't need to create pull
+          request but if the relevant party wants a pull request from us then we have to creae a pull request. 
 
 3. Working on an existing project
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
-
+         "git clone [url]" command is used to copy a remote repository in your machine.
+  
   b, Do you need to initiate a git repository after cloning a project?
-
+        No, we don't have to do a git init , because it is already done by git clone.  
+  
   c, What is the difference between forking and cloning?
-
+        A fork creates a completely independent copy of Git repository. while a Git clone creates a linked copy that will 
+        continue to synchronize with the target repository.
+  
   d, Can you just push your changes to repository that you don't "own" on github?
+          If the person who own the repository give us the access (fork) to make changes in repository , so after making changes we can push it.
+         after update a file in repo a pull request will be created and the owner of the repository will have a chance to review your 
+         change and either accept it, reject it, or discuss it with you.
