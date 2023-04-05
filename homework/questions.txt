@@ -3,20 +3,23 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-  - A root directory is an absolute path that shows us the 
+  - A root directory is a main directory that a computer has. 
+  It contains all the essential files and folders that the computer needs
+  and it is noted by a "/".
 
   b, What is the difference between root and home directory?
+  - Root directory is denoted by / and home direcotry with "~".
 
   c, What is the difference between absolute and relative path?
 
   d, What command do you use to see what directory are you currently in?
-  - "ls" command 
+  - "pwd" command 
 
   e, How would you see the files and folders in a directory?
   - "ls" 
 
   f, How do you go back to your home directory?
-  - "cd -"
+  - "cd" or cd ~
 
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
   = mkdir name-of-a-new-folder
