@@ -3,22 +3,30 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
+  - A root directory is an absolute path that shows us the 
 
   b, What is the difference between root and home directory?
 
   c, What is the difference between absolute and relative path?
 
   d, What command do you use to see what directory are you currently in?
+  - "ls" command 
 
   e, How would you see the files and folders in a directory?
+  - "ls" 
 
   f, How do you go back to your home directory?
+  - "cd -"
 
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
+  = mkdir name-of-a-new-folder
 
   h, How do you remove a folder/directory, is it the same as removing a file?
+  = rm -r name-of-the-direcotry/folder
 
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
+  = It means that the file/folder contains come contents which cannot be removed, and for this we need to 
+  use flag -r so that we can remove it anyway.
 
   j, How do you move a folder/file ? What arguments does the command take?
 
@@ -26,6 +34,7 @@ we went through in class.
     (How/Where do you see the manual/help for a command)
 
   l, With what command do you rename a folder/file in the command line?
+  = cp old_folder_name_ new_folder_name
 
   m, How do you copy a folder ?
 
@@ -47,8 +56,10 @@ we went through in class.
     - from the staging area to local repository
 
   e, What does git status do ?
+  = "git status" provides us on the changes we have made on our repo.
 
   f, How would you check your commit history?
+  - git log
 
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
@@ -70,5 +81,9 @@ we went through in class.
   b, Do you need to initiate a git repository after cloning a project?
 
   c, What is the difference between forking and cloning?
+  - Forking is when we can to make a copy of a repository that we would like to work on as we can get in on our name on GitHub
+  so that we can work and make changes on it. Whereas, while cloning a project we cannot make changes to it unless we have 
+  a permission or someone has invited to collaborate on it.
 
   d, Can you just push your changes to repository that you don't "own" on github?
+  - No, we first need to fork the repo that we would like to work on and then clone it so that we can do some changes to it.
