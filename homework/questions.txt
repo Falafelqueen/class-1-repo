@@ -3,72 +3,72 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-
+ The root directory is the first directory on the system's hierarchy.
   b, What is the difference between root and home directory?
-
+ Root directory contains all other directories and files on the system while home directory (which is also included in root directory) only contains certain user's directories and files.
   c, What is the difference between absolute and relative path?
-
+ A relative path describes the location of a file relative to the current directory while the absolute path describes the location from the root directory.
   d, What command do you use to see what directory are you currently in?
-
+ pwd
   e, How would you see the files and folders in a directory?
-
+ by typing in the terminal ls
   f, How do you go back to your home directory?
-
+ By typing in the terminal cd ~
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
-
+ By typing in the terminal mkdir (folder's name), yes you can as long as you specify where you want to save the folder (e.g. mkdir test_folder/Downloads)
   h, How do you remove a folder/directory, is it the same as removing a file?
-
+ rmdir (folder's name)
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
-
+ -rf
   j, How do you move a folder/file ? What arguments does the command take?
-
+ mv (folder/file's name) (specify location). The commands take 2 arguments: naming and moving the file/folder.
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
-
+ By typing man <command> you see the manual of the selected command.
   l, With what command do you rename a folder/file in the command line?
-
+ mv (current file/folder's name) (the new file/folder's name)
   m, How do you copy a folder ?
-
+ By typing cp (folder's name)
   n, What command do you use to open a folder/file ?
-
+  open (file/folder's name)
 2. Creating a new project
   a, How do you create a new folder (what command) ?
-
+ mkdir (name of the folder)
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
-
+ git init 
   c, What command do you use to create a new file ?
-
+ touch (name of the file)
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
-
+ 
     - from working directory to the staging area
-
+ git add (file's name)
     - from the staging area to local repository
-
+ git commit (file's name)
   e, What does git status do ?
-
+ Tells you about the status of the file
   f, How would you check your commit history?
-
+ git log
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
-
+ git clone [url]
     - How do you check whether you already have some github/remote repository connected to your local one?
-
+ git remote -v
     - What command do you use to add the remote
-
-  h, When local and remote repository are connected, one can push the changes/files so they are visible
-     on github. What would be the structrure of the command ? Do you need to create a pull request?
-
+ git remote add [alias] [url]
+  h, When local and remote repository are connected, one can push the changes/files so they are visible on GitHub. What would be the structure of the command ? Do you need to create a pull request?
+ git push origin main . Yes you need to pull a request from GitHub.
 
 3. Working on an existing project
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
-
+ git clone (url)
   b, Do you need to initiate a git repository after cloning a project?
-
+ No
   c, What is the difference between forking and cloning?
-
+ With cloning, you basically download the folders/files from GitHub to your machine where you can later modify as you like; however, only the publisher can push if there is changes. On the other hand, forking creates an own version of the cloned folder/file
   d, Can you just push your changes to repository that you don't "own" on github?
+ No
