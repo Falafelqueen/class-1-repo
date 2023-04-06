@@ -69,6 +69,6 @@ we went through in class.
   b, Do you need to initiate a git repository after cloning a project?
  No
   c, What is the difference between forking and cloning?
- With cloning, you basically download the folders/files from GitHub to your machine where you can later modify as you like; however, only the publisher can push if there is changes. On the other hand, forking 
+ With cloning, you basically download the folders/files from GitHub to your machine where you can later modify as you like; however, only the publisher can push if there is changes. On the other hand, forking creates an own version of the cloned folder/file
   d, Can you just push your changes to repository that you don't "own" on github?
  No
